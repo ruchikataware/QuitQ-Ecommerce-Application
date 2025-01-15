@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;  /* Ensure the body fills the entire viewport height */
+  width: 100%;   /* Ensure the body takes up the full width */
+  scroll-behavior: smooth;
+}
+
+.App {
+  min-height: 100vh;  /* This ensures the content takes up the full screen height */
+  display: flex;
+  flex-direction: column;
+  width: 100%;  /* Ensures the container takes full width */
+}
+
+.main-container {
+  flex-grow: 1; /* Ensures content grows and pushes footer to the bottom */
+  width: 100%;  /* Ensures the container takes full width */
+}

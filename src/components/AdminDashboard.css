@@ -1,0 +1,72 @@
+.admin-dashboard {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.admin-dashboard-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.sidebar {
+  min-height: 100vh;
+  width: 250px;
+  background-color: #343a40;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+.nav-link {
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #495057;
+}
+
+.main-content-area {
+  margin-top: 80px;
+  margin-left: 270px;
+  margin-right: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3#sidebar-title {
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #6c757d;
+  margin-bottom: 20px;
+}
+
+.row.g-0 {
+  margin: 0;
+}
+
+.col-md-3,
+.col-md-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#admin-dashboard-nav button{
+  margin-bottom: 15px;
+}

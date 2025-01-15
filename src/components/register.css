@@ -1,0 +1,185 @@
+html,
+body {
+  height: 100%;
+  margin: 0; 
+  padding: 0; 
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+}
+
+header {
+  width: 100%;
+  background-color: #3b87f3;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.customer-register-outer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.customer-register-main-div {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.customer-register-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customer-register-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.customer-register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customer-register-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customer-register-username,
+.customer-register-firstname,
+.customer-register-lastname,
+.customer-register-email,
+.customer-register-phone,
+.customer-register-address,
+.customer-register-password,
+.customer-register-confirm,
+.customer-register-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.customer-register-username:focus,
+.customer-register-firstname:focus,
+.customer-register-lastname:focus,
+.customer-register-email:focus,
+.customer-register-phone:focus,
+.customer-register-address:focus,
+.customer-register-password:focus,
+.customer-register-confirm:focus,
+.customer-register-dropdown:focus {
+  border-color: #3b87f3;
+  outline: none;
+}
+
+/* Asterisk for required fields */
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* Validation icons */
+.valid {
+  color: green;
+  margin-left: 10px;
+}
+
+.invalid {
+  color: red;
+  margin-left: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.instructions {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.offscreen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+.customer-register-submit {
+  background-color: #3b87f3;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customer-register-submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.customer-register-submit:hover {
+  background-color: #2c71d2;
+}
+
+.customer-register-paragraph {
+  text-align: center;
+  font-size: 16px;
+}
+
+.customer-register-span {
+  font-weight: bold;
+}
+
+.customer-register-link {
+  color: #3b87f3;
+  text-decoration: none;
+}
+
+.customer-register-link:hover {
+  text-decoration: underline;
+}
+
+.errmsg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.customer-register-dropdown {
+  height: 40px;
+}
+
+.customer-register-dropdown option {
+  font-size: 16px;
+}

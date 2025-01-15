@@ -1,0 +1,19 @@
+.hero{
+    background: url('../images/cart.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-top: 10px;
+}
